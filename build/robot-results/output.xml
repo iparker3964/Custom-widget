@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_73)" generated="20170212 20:29:56.211">
+<suite source="C:\Users\Chelsea\Desktop\custom-widget (3)\src\test\acceptancetest" name="Acceptancetest" id="s1">
+<suite source="C:\Users\Chelsea\Desktop\custom-widget (3)\src\test\acceptancetest\CustomWidgetTests.robot" name="CustomWidgetTests" id="s1-s1">
+<test name="Hexagon Is Selected Initially" id="s1-s1-t1">
+<kw library="SwingLibrary" name="Start Application">
+<doc>Alias for `Launch Application` keyword</doc>
+<arguments>
+<arg>edu.jsu.mcis.Main</arg>
+</arguments>
+<status endtime="20170212 20:30:12.275" starttime="20170212 20:30:11.066" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Select Window">
+<doc>Selects a window as current context and sets focus to it.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:12.814" starttime="20170212 20:30:12.289" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Label Text Should Be">
+<doc>Checks the equality of given text and the text displayed on a label.</doc>
+<arguments>
+<arg>label</arg>
+<arg>Hexagon</arg>
+</arguments>
+<status endtime="20170212 20:30:12.997" starttime="20170212 20:30:12.824" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Close Window">
+<doc>Closes a window.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:13.371" starttime="20170212 20:30:13.002" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170212 20:30:13.380" starttime="20170212 20:30:11.047" status="PASS"></status>
+</test>
+<test name="Octagon Is Selected After Center Click" id="s1-s1-t2">
+<kw library="SwingLibrary" name="Start Application">
+<doc>Alias for `Launch Application` keyword</doc>
+<arguments>
+<arg>edu.jsu.mcis.Main</arg>
+</arguments>
+<status endtime="20170212 20:30:13.522" starttime="20170212 20:30:13.448" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Select Window">
+<doc>Selects a window as current context and sets focus to it.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:13.614" starttime="20170212 20:30:13.526" status="PASS"></status>
+</kw>
+<kw library="keywords.CustomWidgetKeywords" name="Click Octagon Inside">
+<status endtime="20170212 20:30:13.723" starttime="20170212 20:30:13.621" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Label Text Should Be">
+<doc>Checks the equality of given text and the text displayed on a label.</doc>
+<arguments>
+<arg>label</arg>
+<arg>Octagon</arg>
+</arguments>
+<status endtime="20170212 20:30:13.756" starttime="20170212 20:30:13.733" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Close Window">
+<doc>Closes a window.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:13.980" starttime="20170212 20:30:13.759" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170212 20:30:13.985" starttime="20170212 20:30:13.391" status="PASS"></status>
+</test>
+<test name="Widget Is Unchanged After Edge Click" id="s1-s1-t3">
+<kw library="SwingLibrary" name="Start Application">
+<doc>Alias for `Launch Application` keyword</doc>
+<arguments>
+<arg>edu.jsu.mcis.Main</arg>
+</arguments>
+<status endtime="20170212 20:30:14.106" starttime="20170212 20:30:14.048" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Select Window">
+<doc>Selects a window as current context and sets focus to it.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:14.168" starttime="20170212 20:30:14.112" status="PASS"></status>
+</kw>
+<kw library="keywords.CustomWidgetKeywords" name="Click Hexagon Outside">
+<status endtime="20170212 20:30:14.221" starttime="20170212 20:30:14.172" status="PASS"></status>
+</kw>
+<kw library="keywords.CustomWidgetKeywords" name="Click Octagon Outside">
+<status endtime="20170212 20:30:14.290" starttime="20170212 20:30:14.224" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Label Text Should Be">
+<doc>Checks the equality of given text and the text displayed on a label.</doc>
+<arguments>
+<arg>label</arg>
+<arg>Hexagon</arg>
+</arguments>
+<status endtime="20170212 20:30:14.339" starttime="20170212 20:30:14.293" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Close Window">
+<doc>Closes a window.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:14.576" starttime="20170212 20:30:14.351" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170212 20:30:14.580" starttime="20170212 20:30:14.006" status="PASS"></status>
+</test>
+<test name="Widget Toggles With Successive Center Clicks" id="s1-s1-t4">
+<kw library="SwingLibrary" name="Start Application">
+<doc>Alias for `Launch Application` keyword</doc>
+<arguments>
+<arg>edu.jsu.mcis.Main</arg>
+</arguments>
+<status endtime="20170212 20:30:14.658" starttime="20170212 20:30:14.604" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Select Window">
+<doc>Selects a window as current context and sets focus to it.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:14.720" starttime="20170212 20:30:14.662" status="PASS"></status>
+</kw>
+<kw library="keywords.CustomWidgetKeywords" name="Click Octagon Inside">
+<status endtime="20170212 20:30:14.764" starttime="20170212 20:30:14.730" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Label Text Should Be">
+<doc>Checks the equality of given text and the text displayed on a label.</doc>
+<arguments>
+<arg>label</arg>
+<arg>Octagon</arg>
+</arguments>
+<status endtime="20170212 20:30:14.782" starttime="20170212 20:30:14.767" status="PASS"></status>
+</kw>
+<kw library="keywords.CustomWidgetKeywords" name="Click Octagon Inside">
+<status endtime="20170212 20:30:14.808" starttime="20170212 20:30:14.785" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Label Text Should Be">
+<doc>Checks the equality of given text and the text displayed on a label.</doc>
+<arguments>
+<arg>label</arg>
+<arg>Hexagon</arg>
+</arguments>
+<status endtime="20170212 20:30:14.832" starttime="20170212 20:30:14.813" status="PASS"></status>
+</kw>
+<kw library="SwingLibrary" name="Close Window">
+<doc>Closes a window.</doc>
+<arguments>
+<arg>Main</arg>
+</arguments>
+<status endtime="20170212 20:30:15.073" starttime="20170212 20:30:14.835" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20170212 20:30:15.107" starttime="20170212 20:30:14.590" status="PASS"></status>
+</test>
+<status endtime="20170212 20:30:15.167" starttime="20170212 20:29:57.325" status="PASS"></status>
+</suite>
+<status endtime="20170212 20:30:15.288" starttime="20170212 20:29:56.271" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" name="Acceptancetest" id="s1">Acceptancetest</stat>
+<stat pass="4" fail="0" name="CustomWidgetTests" id="s1-s1">Acceptancetest.CustomWidgetTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
